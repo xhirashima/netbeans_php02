@@ -1,0 +1,37 @@
+
+# ログイン
+auth_login:
+    pattern: /login
+    defaults: { _controller: AppTestBundle:Default:login }
+
+# ログインチェック
+auth_login_check:
+    pattern: /login_check
+
+# ログアウト
+auth_logout:
+    pattern: /logout
+
+
+#ユーザー管理
+auth_mng_list:
+    pattern: /user/list
+    defaults: { _controller: AppTestBundle:User:list }
+
+
+
+
+#test
+test_test:
+    pattern: /test
+    defaults: { _controller: AppTestBundle:Default:test }
+
+# index
+#test_index:
+#    pattern:  /
+#    defaults: { _controller: AppTestBundle:Default:index }
+
+
+#AppTestBundle_homepage:
+#    pattern:  /hello/{name}
+#    defaults: { _controller: AppTestBundle:Default:index }

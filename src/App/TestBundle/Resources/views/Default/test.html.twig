@@ -1,0 +1,7 @@
+
+{% extends "::base.html.twig" %}
+
+{% block body %}
+ここはROLE_ADMINとROLE_TESTがアクセス可能です。<br />
+<a href="{{ path('auth_logout') }}">ログアウト</a>
+{% endblock %}
